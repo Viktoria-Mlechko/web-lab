@@ -1,0 +1,152 @@
+.recomendations {
+    padding-bottom: 60px;
+}
+
+.recomendations .title {
+    margin-top: 8px;
+    font-size: 23px;
+    color: #353535;
+}
+
+.products-catalog {
+    margin-top: 10px;
+
+    padding: 0;
+}
+
+.products-catalog .product {
+    padding: 12px 16px;
+    min-height: 360px;
+    display: block;
+    border: 1px solid #eaeaea;
+    margin-bottom: 115px;
+
+    cursor: pointer;
+}
+
+.products-catalog .product:hover .description {
+    font-weight: bold;
+}
+
+.products-catalog .product:hover {
+    box-shadow: 0 0 2px 1px rgb(0 0 0 / 23%);
+}
+
+.products-catalog .product-image {
+    width: 145px;
+    height: 145px;
+
+    margin: 0 auto;
+    margin-bottom: 6px;
+
+    position: relative;
+}
+
+.products-catalog .description {
+    color: #353535;
+    margin-bottom: 10px;
+    height: 107px;
+}
+
+
+.products-catalog .product footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.products-catalog .price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products-catalog  .price-under {
+    font-size: 14px;
+    text-decoration:line-through;
+    margin: -27px 0 15px;
+}
+
+.products-catalog .price-discount {
+    color: #bf1b1a;
+}
+
+.products-catalog .product-stock {
+    font-size: 12px;
+    color: #5a4;
+}
+
+ .orange-text {
+    color: #FFA500 !important;
+}
+
+.product-discount {
+    position: absolute;
+    bottom: 10px;
+    left: -30px;
+    background-color: #bf1b1a;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 5px 2px;
+    border-radius: 3px;
+
+    display: none;
+}
+
+.product-discount--visible {
+    display: block;
+}
+.product>footer {
+    display: block !important;
+}
+.product>footer * {
+    display: block !important;
+    margin-top: 5px;
+}
+.product>footer a {
+    color: #0a5;
+    position: relative;
+    padding-left: 20px;
+}
+.product>footer a::before {
+    content:"";
+	position:absolute;
+	top: 3px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background:url(	https://zavod-pt.ru/bitrix/templates/iarga.shopplus100.main/images/icon_bt_one_cl.png ) no-repeat;
+}
+
+.product>footer a:last-child:before {
+	background:url(	https://zavod-pt.ru/bitrix/templates/iarga.shopplus100.main/images/icon_bt_compare.png ) no-repeat;
+}
+
+.btn-danger {
+    background: linear-gradient(to bottom,  #e65d5d 0%,#e05353 16%,#d94848 28%,#bd1818 72%,#b30707 91%,#b00101 100%);
+}
+
+.product .btn-buy {
+    padding: 4px 12px 8px 31px;
+}
+.product .btn-buy:before {
+	content:"";
+	position:absolute;
+	top: 12px;
+	left: 7px;
+	width:20px;
+	height:19px;
+	background:url(	https://zavod-pt.ru/bitrix/templates/iarga.shopplus100.main/images/icon_bt_basket.png) no-repeat;
+}
+.product .hidden-group {
+    display: none !important;
+}
+
+.product:hover .hidden-group {
+    display: block !important;
+}
+
+.product:hover {
+    margin-bottom: 0;
+}

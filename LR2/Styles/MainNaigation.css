@@ -1,0 +1,31 @@
+.main-navigation .navbar  {
+    background: linear-gradient(to bottom,  #68b641 0%,#55a438 23%,#0f631a 82%,#035814 97%,#035716 100%);
+    border-radius: 5px;
+    
+    margin-top: 30px;
+}
+
+.main-navigation .nav-item  {
+    padding: 3px 3px 2px 10px;
+}
+
+.main-navigation .nav-link {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 11px 0 0;
+
+    white-space: nowrap;
+    position: relative;
+}
+
+.main-navigation .sub-navbar::after {
+    content: "\25BC";
+
+    position: absolute;
+    top: 3px;
+    right: -6px;
+
+    font-size: 10px;
+    transform: scaleY(.8);
+}

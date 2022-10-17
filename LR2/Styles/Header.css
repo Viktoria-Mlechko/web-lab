@@ -1,0 +1,126 @@
+header {
+    margin-top: 20px;
+}
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 222px;
+    height: 100px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.townInput {
+    border: 1px solid #aaa;
+    transform: skewX(-10deg);
+    position: relative;
+
+    width: 300px;
+    height: 30px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.townInput .wrapper {
+    transform: skewX(10deg);
+    font-size: 18px;
+}
+
+.townInput::after {
+    content: "\25BC";
+
+    position: absolute;
+    top: 0px;
+    right: 10px;
+
+    font-size: 18px;
+
+    transform: skewX(10deg);
+    transform: scale(.6, .4);
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts .info, .phone .phone-info {
+    font-size: 12px;
+    line-height: 1.3;
+    text-align: center;
+}
+.contacts .info
+{
+    height: 100%;
+    padding: 5px 0 0 12px;
+}
+.contacts p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+}
+.phone-number::before {
+    content: "";
+    
+    background: url(https://zavod-pt.ru/bitrix/templates/iarga.shopplus100.main/images/icon_phone.svg) no-repeat 0 6px;
+    background-size: 17px 21px;
+    
+    width: 17px;
+    height: 31px;
+
+    position: absolute;   
+    left: 20px;
+}
+.phone-number {
+    font-size: 24px;
+    line-height: 1;
+}
+.phone-info {
+    margin: 0;
+}
+
+
+.header-container {
+    display: grid;
+    align-items: center;
+}
+
+.busket {
+    display: flex;
+    flex-direction: column;
+}
+.busket-title {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+
+    position: relative;
+}
+.busket-title::before {
+    content: "";
+    
+    background: url(https://zavod-pt.ru/bitrix/templates/iarga.shopplus100.main/images/icon_basket@2x.png) no-repeat 0 6px;
+    background-size: 40px 35px;
+    
+    width: 45px;
+    height: 45px;
+
+    position: absolute;   
+    left: -48px;
+}
+.busket-status {
+    color: #3E69AD;
+}

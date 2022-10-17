@@ -1,0 +1,44 @@
+.search .wrapper {
+    display: flex;
+
+    background-color: #fff;
+}
+
+.search-icon {
+    width: 45px;
+    height: 39px;
+
+    background-color: #aaa;
+    background: url(https://zavod-pt.ru/bitrix/templates/iarga.shopplus100.main/images/icon_search1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 1px solid #aaa;
+}
+.input-area {
+    background-color: #f6faf4;
+
+    width: 100%;
+
+    padding: 0 15px;
+    font-size: 18px;
+    color: #555;
+
+    border: 1px solid #aaa;
+    border-left: none;
+    border-right: none;
+}
+.input-area:focus {
+    outline: none;
+}
+.find-btn {
+    background: linear-gradient(to bottom,  #68b641 0%,#55a438 23%,#0f631a 82%,#035814 97%,#035716 100%);
+    border-radius: 0;
+    color: #fff;
+}
+
+
+.main-search .wrapper {
+    margin-top: 20px;
+    padding: 0 20px;
+}
