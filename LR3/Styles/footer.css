@@ -1,0 +1,35 @@
+.main-footer {
+    background-image: url(https://zavod-pt.ru/bitrix/templates/iarga.shopplus100.main/images/bg_footer.jpg);
+    background-size: cover;
+}
+
+.main-footer .footer-search {
+    padding-top: 50px;
+}
+
+.main-footer .links {
+    margin-top: 30px;
+}
+
+.information-block {
+    padding-top: 40px;
+}
+.main-footer .contacts {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 50px;
+}
+.main-footer .links-group-link {
+    color: #B1B1B1;
+}
+
+.warning-block {
+    color: #555;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.copyright {
+    color: #787777;
+}

@@ -1,0 +1,12 @@
+.magazine {
+    margin-top: 20px;
+}
+
+.magazine-content {
+    background-color: #292;
+    background-image: url(https://zavod-pt.ru/upload/iblock/ed8/ed8b2986a9919a237768142185d298e3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    height: 50px;
+}

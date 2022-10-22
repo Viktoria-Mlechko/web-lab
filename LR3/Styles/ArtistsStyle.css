@@ -1,0 +1,238 @@
+/* 
+    ОБЩИЕ НАСТРОЙКИ
+    ШАПКА
+    ФИЛЬТР
+    СПИСОК БЛЮД
+*/
+
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* ОБЩИЕ НАСТРОЙКИ */
+*, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+
+    color: #222222;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+body {
+    background: linear-gradient(#eee, #f5f5f5);
+}
+
+
+
+
+
+
+/* ШАПКА */
+.page-title {
+    font-size: 40px;
+    text-align: center;
+    padding: 100px 0 50px;
+}
+.no-found-title {
+    font-size: 30px;
+    margin: 40px 40px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+/* ФИЛЬТР */
+.search-area {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.search-area-wrapper {
+    display: flex;
+
+    border-radius: 50px;
+    box-shadow: 0 0 5px #222;
+
+    overflow: hidden;
+}
+
+.search-field, .search-button {
+    height: 40px;
+    font-size: 20px;
+}
+.search-field {
+    width: 90%;
+    padding: 0 20px;
+}
+.search-button {
+    width: 10%;
+    border-left: 1px solid #222;;
+}
+.search-button:hover {
+    background-color: #e4e4e4;
+}
+.search-area-showFilters-btn {
+    line-height: 50px;
+    position: relative;
+    transition: .2s;
+
+    font-size: 16px;
+}
+.search-area-showFilters-btn::after {
+    content: "";
+
+    background: #aaa;
+
+    width: 0;
+    height: 3px;
+    
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 55px;
+
+    transition: .5s;
+}
+.search-area-showFilters-btn:hover::after {
+    content: "";
+
+    background: #000;
+
+    width: 165px;
+    height: 3px;
+    
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+}
+.search-area-filters {
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: none;
+    justify-content: space-around;
+
+    overflow: hidden;
+}
+.filter-select, .filter-type option {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.filter-price {
+    font-size: 16px;
+}
+.filter-reset-btn,
+.filter-price-input {
+    font-size: 16px;
+
+    width: 100px;
+    height: 100%;
+
+    border: 1px solid #aaa;
+    text-align: center;
+
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+
+
+/* СПИСОК БЛЮД */
+.artists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-bottom: 100px;
+}
+
+.artist {
+    width: 400px;
+    min-height: 300px;
+
+    box-shadow: 0 0 5px #222;
+    border-radius: 5px;
+    overflow: hidden;
+
+    margin-top: 50px;
+    background-color: #fff;
+
+    transition: .2s;
+}
+
+.artist:hover {
+    box-shadow: 0 0 10px #222;
+    border-radius: 20px;
+
+    background-color: #efefef;
+}
+
+.artist-image {
+    width: 100%;
+    border-bottom: 5px solid #555;
+}
+
+.artist-title {
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 100;
+    text-align: center;
+
+    color: #000;
+}
+
+.artist-category {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.artist-biography {
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.artist-price {
+    font-size: 25px;
+    margin: 20px 0;
+    text-align: center;
+
+    color: #555;
+}
+
+.artist-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 40px 100px 50px;
+
+    padding-bottom: 20px;
+}
