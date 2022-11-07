@@ -58,7 +58,7 @@
 <body>
     <div class="container page">
 
-        <h2 class="page-title">Каталог блюд французской кухни</h2>
+        <h2 class="page-title">Наши артисты</h2>
 
         <form class="search-area" method="get" action="artists.php?go">
             <div class="search-area-wrapper">
