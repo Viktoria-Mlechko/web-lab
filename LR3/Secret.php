@@ -1,8 +1,8 @@
 <?php
     session_start();
     include_once __DIR__.'/helpers.php';
+    
     $link = mysqli_connect("localhost", "root", "", "actors");
-
     $emptyQuest = isset($_GET['submit']) & !isset($_GET['reset']);
 
     $message = isset($_GET['message']) ? $_GET['message'] : null;
@@ -44,8 +44,11 @@
         }
     }
 
-    $artistInfo = mysqli_fetch_all(mysqli_query($link, $query), MYSQLI_ASSOC);  
-  
+    $artistInfo = mysqli_fetch_all(mysqli_query($link, $query), MYSQLI_ASSOC);   
+
+    if (!checkAuth()) {
+      header("Location: Login.php");
+    }
 
     ?>
 
@@ -68,28 +71,25 @@
   <div class="container page">
     <header>
       <div class="authorise">
-        <?php if(!checkAuth()){?>
+        <?php if(!checkAuth()):?>
         Вы не авторизованы
         <div class="links">
           <a class="link" href="Login.php">Ввести логин и пароль</a>
           <a class="link" href="Registration.php">Зарегестрироваться</a>
         </div>
-        <?php } else {?>
+        <?else:?>
         Вы уже авторизованы, как <?=$_SESSION['email']?>
         <div class="links">
           <a class="link" href="Logout.php">Выйти</a>
         </div>
-        <?php }?>
-      </div>
-      <div class="links">
-        <a class="link" href="Secret.php">Секретная страница</a>
+        <?php endif;?>
       </div>
     </header>
-    <?if($message){?>
+    <?if($message):?>
     <div class="message">
       <?=$message?>
     </div>
-    <? }?>
+    <? endif;?>
     <h2 class="page-title">Наши артисты</h2>
 
     <form class="search-area" method="get" action="Artists.php?go">
