@@ -1,0 +1,58 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.page-title 
+{
+	text-align: center;
+	padding: 50px 0;
+}
+.start-text 
+{
+	min-width: 100%;
+}
+.exercise-btn 
+{
+	height: 50px;
+	width: 100%;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	transition: .5s;
+
+	margin-top: 20px;
+	margin-bottom: 50px;
+
+	box-shadow: 0 0 6px #222;
+}
+.exercise-btn-wrapper:hover .exercise-btn 
+{
+	transform: translate(10px, 20px);
+	box-shadow: 0 0 10px #222;
+}
+.edited-text
+{
+	padding-bottom: 50px;
+}
+.start-text-output 
+{
+	padding-bottom: 50px;
+}
+.exercise-navigation 
+{
+	list-style: none;
+}
+.exercise-navigation a
+{
+	color: #222;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 40px;
+}
+.exercise-navigation li::before
+{
+	content: "- ";
+}
